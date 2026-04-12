@@ -2631,9 +2631,9 @@ const LS_DEMO_BAL       = 'composure_demo_balance';
 const LS_DEMO_POSITIONS = 'composure_demo_positions';
 const LS_DEMO_HISTORY   = 'composure_demo_history';
 
-let demoInstrument = 'XAUUSD';
-let demoDirection  = 'long';
-let demoLots       = 0.1;
+var demoInstrument = 'XAUUSD';
+var demoDirection  = 'long';
+var demoLots       = 0.1;
 
 // ── Storage ──
 function loadDemoBal()   { try { var v = parseFloat(localStorage.getItem(LS_DEMO_BAL)); return isNaN(v) ? DEMO_START_BAL : v; } catch(e) { return DEMO_START_BAL; } }
